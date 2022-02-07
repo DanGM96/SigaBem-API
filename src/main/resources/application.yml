@@ -1,0 +1,17 @@
+
+spring:
+  datasource:
+    password: root
+    username: root
+    url: 'jdbc:mysql://localhost:3306/sigabemdb?useTimezone=true&serverTimezone=UTC'
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
